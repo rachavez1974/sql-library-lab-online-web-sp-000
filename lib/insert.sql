@@ -1,0 +1,6 @@
+INSERT INTO series (id, title, author_id, subgenre_id) VALUES (1, "A Song of Ice and Fire", 1, 1), (2, "Second Series", 2, 2);
+INSERT INTO subgenres (id, name) VALUES (1, "medieval"), (2, "space opera");
+INSERT INTO authors (id, name) VALUES (1, "George R. R. Martin"), (2, "Second Author");
+INSERT INTO books (id, title, year, series_id) VALUES (1, "Game of Thrones", 1996, 1), (2, "A Clash of Kings", 1998, 1), (3, "A Storm of Swords", 2000, 1), (4, "First Book", 2002, 2), (5, "Second Book", 2003, 2), (6, "Third Book", 2005, 2);
+INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES (1, "Lady", "Woof Woof", "direwolf", 1, 1), (2, "Tyrion Lannister", "A Lannister always pays his debts", "human", 1, 1), (3, "Daenerys Targaryen", "If I look back I am lost", "human", 1, 1), (4, "Eddard Stark", "Winter is coming", "human", 1, 1), (5, "Tone Loc", "Wild Thing", "human", 1, 1) , (6, "Howard Duck", "Looney Toon", "Duck", 1, 1), (7, "Tony Stark", "Iron Man", "Comic", 1, 1), (8, "Winnie The Poo", "Oh, Brother!", "Bear", 1, 1);
+INSERT INTO character_books (id, book_id, character_id) VALUES (17, 4, 5), (18, 5, 6), (19, 6, 6), (20, 7, 6), (21, 8, 7), (22, 9, 7), (23, 10, 7), (24, 11, 8), (25, 12, 5), (26, 13, 6), (27, 14, 6), (28, 15, 6), (29, 16, 7), (30, 17, 7), (31, 18, 7), (32, 19, 8);
