@@ -27,6 +27,6 @@ CREATE TABLE series
    subgenre_id INTEGER);
 
 CREATE TABLE character_books 
-(id INTEGER, 
- book_id INTEGER PRIMARY KEY, 
+(id INTEGER PRIMARY key, 
+ book_id INTEGER, 
  character_id INTEGER);
